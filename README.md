@@ -2,6 +2,8 @@
 
 ## Screenshots
 
+![](http://imgur.com/l2WOqLW.png)
+
 ## Installation on Vim
 
 ```
