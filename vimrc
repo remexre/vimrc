@@ -9,7 +9,7 @@ if dein#load_state(expand('~/.vim/'))
 
 	call dein#add('~/.vim/repos/github.com/Shougo/dein.vim')
 	call dein#add('Shougo/denite.nvim')
-	call dein#add('Shougo/neocomplete.nvim')
+	call dein#add('Shougo/neocomplete.vim')
 	call dein#add('autozimu/LanguageClient-neovim')
 	call dein#add('cespare/vim-toml')
 	call dein#add('ctrlpvim/ctrlp.vim')
