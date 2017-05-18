@@ -10,7 +10,6 @@ if dein#load_state(expand('~/.vim/'))
 	call dein#add('~/.vim/repos/github.com/Shougo/dein.vim')
 	call dein#add('Shougo/denite.nvim')
 	call dein#add('Shougo/neocomplete.vim')
-	call dein#add('autozimu/LanguageClient-neovim')
 	call dein#add('cespare/vim-toml')
 	call dein#add('ctrlpvim/ctrlp.vim')
 	call dein#add('davidbeckingsale/writegood.vim')
@@ -48,15 +47,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-let g:LanguageClient_autoStart = 1
-let g:LanguageClient_serverCommands = {
-	\ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-	\ }
 let g:neocomplete#enable_at_startup = 1
 
-nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
 noremap <C-I> :NERDTreeToggle<CR>
 
 let mapleader = "\<SPACE>"
