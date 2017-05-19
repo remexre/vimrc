@@ -22,7 +22,9 @@ git clone https://github.com/remexre/vimrc.git ~/.config/nvim
 
 Keybinds:
 
- - `C-N` -- Multiple cursors, like Atom's `C-D`
+ - `C-N` -- Multiple cursors, like Atom's `C-D`. Keybinds are a bit
+   different in multi-cursor mode, check that project's README for
+   details. (Or, use `cgn`, `.`, and `*`)
  - `C-P` -- Open the File Finder
  - `Tab` -- Open/Close NERDTree
 
@@ -47,6 +49,7 @@ Commands:
  - Git Support
  - Haskell character transformation (e.g. `\` to `λ`)
  - Multiple cursors, like Atom and Sublime Text
+   - Although `cgn`, `.`, and `*` kinda obsolete this...
  - Pretty
    - Airline (best with nerd-fonts)
    - Colorschemes
